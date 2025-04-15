@@ -1,8 +1,10 @@
 import streamlit as st
 import pandas as pd
 import time
+import os
 from auth import authenticate, create_user_table, register_user, login_user
 from recommendation import load_model, get_recommendations
+from db_utils import create_history_table, save_recommendation, get_user_history
 
 # Set page configuration
 st.set_page_config(
@@ -17,11 +19,10 @@ if 'logged_in' not in st.session_state:
     st.session_state.logged_in = False
 if 'username' not in st.session_state:
     st.session_state.username = ""
-if 'user_history' not in st.session_state:
-    st.session_state.user_history = []
 
-# Database setup
+# Database setup - create tables if they don't exist
 create_user_table()
+create_history_table()
 
 # Load the model at app startup
 model, vectorizer, all_symptoms, drug_names = load_model()
@@ -118,15 +119,17 @@ def recommendation_section():
                     # Get recommendations
                     recommendations = get_recommendations(user_symptoms, vectorizer, model, drug_names)
                     
-                    # Store in history
-                    history_entry = {
-                        "timestamp": pd.Timestamp.now().strftime("%Y-%m-%d %H:%M:%S"),
-                        "symptoms": user_symptoms,
-                        "severity": severity,
-                        "duration": duration,
-                        "recommendations": recommendations[:3]  # Store top 3 recommendations
-                    }
-                    st.session_state.user_history.append(history_entry)
+                    # Store in database
+                    save_result = save_recommendation(
+                        st.session_state.username, 
+                        user_symptoms, 
+                        severity, 
+                        duration, 
+                        recommendations[:3]  # Store top 3 recommendations
+                    )
+                    
+                    if not save_result:
+                        st.warning("Failed to save your recommendation history to the database.")
                     
                     # Display recommendations
                     st.subheader("Recommended Medications")
@@ -146,11 +149,14 @@ def recommendation_section():
     elif page == "My History":
         st.header("Your Recommendation History")
         
-        if not st.session_state.user_history:
+        # Get user history from database
+        user_history = get_user_history(st.session_state.username)
+        
+        if not user_history:
             st.info("You haven't requested any recommendations yet.")
         else:
-            # Display history in reverse chronological order
-            for i, entry in enumerate(reversed(st.session_state.user_history)):
+            # Display history
+            for i, entry in enumerate(user_history):
                 with st.expander(f"Consultation on {entry['timestamp']}"):
                     st.write(f"**Symptoms:** {', '.join(entry['symptoms'])}")
                     st.write(f"**Severity:** {entry['severity']}/10")

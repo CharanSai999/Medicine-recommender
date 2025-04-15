@@ -1,41 +1,41 @@
 drug_name,symptoms,description
-Acetaminophen,"['fever', 'headache', 'body ache']",Medication for treating fever, headache, body ache
-Ibuprofen,"['fever', 'joint pain', 'headache', 'body ache']",Medication for treating fever, joint pain, headache, body ache
-Aspirin,"['fever', 'headache', 'body ache']",Medication for treating fever, headache, body ache
-Amoxicillin,"['sore throat', 'ear pain', 'cough']",Medication for treating sore throat, ear pain, cough
-Azithromycin,"['cough', 'fever', 'sore throat']",Medication for treating cough, fever, sore throat
-Loratadine,"['runny nose', 'rash', 'eye irritation']",Medication for treating runny nose, rash, eye irritation
-Cetirizine,"['runny nose', 'eye irritation', 'rash']",Medication for treating runny nose, eye irritation, rash
-Diphenhydramine,"['runny nose', 'insomnia', 'rash']",Medication for treating runny nose, insomnia, rash
-Pseudoephedrine,"['runny nose', 'congestion', 'sinus pressure']",Medication for treating runny nose, congestion, sinus pressure
-Guaifenesin,"['cough', 'chest congestion']",Medication for treating cough, chest congestion
-Dextromethorphan,"['cough', 'sore throat']",Medication for treating cough, sore throat
-Phenylephrine,"['runny nose', 'congestion']",Medication for treating runny nose, congestion
-Omeprazole,"['heartburn', 'acid reflux', 'stomach pain']",Medication for treating heartburn, acid reflux, stomach pain
-Ranitidine,"['heartburn', 'acid reflux', 'indigestion']",Medication for treating heartburn, acid reflux, indigestion
-Famotidine,"['heartburn', 'acid reflux', 'stomach pain']",Medication for treating heartburn, acid reflux, stomach pain
-Simvastatin,"['high cholesterol', 'heart disease risk']",Medication for treating high cholesterol, heart disease risk
-Atorvastatin,"['high cholesterol', 'heart disease risk']",Medication for treating high cholesterol, heart disease risk
-Lisinopril,"['high blood pressure', 'heart failure']",Medication for treating high blood pressure, heart failure
-Amlodipine,"['high blood pressure', 'chest pain']",Medication for treating high blood pressure, chest pain
-Metformin,"['high blood sugar', 'type 2 diabetes']",Medication for treating high blood sugar, type 2 diabetes
-Albuterol,"['shortness of breath', 'wheezing', 'cough']",Medication for treating shortness of breath, wheezing, cough
-Fluticasone,"['nasal congestion', 'runny nose', 'sneezing']",Medication for treating nasal congestion, runny nose, sneezing
-Montelukast,"['allergies', 'asthma', 'shortness of breath']",Medication for treating allergies, asthma, shortness of breath
-Prednisone,"['inflammation', 'allergic reactions', 'autoimmune disorders']",Medication for treating inflammation, allergic reactions, autoimmune disorders
-Metoprolol,"['high blood pressure', 'chest pain', 'heart failure']",Medication for treating high blood pressure, chest pain, heart failure
-Losartan,"['high blood pressure', 'kidney protection', 'heart failure']",Medication for treating high blood pressure, kidney protection, heart failure
-Hydrochlorothiazide,"['high blood pressure', 'fluid retention', 'swelling']",Medication for treating high blood pressure, fluid retention, swelling
-Sertraline,"['depression', 'anxiety', 'panic disorder']",Medication for treating depression, anxiety, panic disorder
-Fluoxetine,"['depression', 'anxiety', 'obsessive-compulsive disorder']",Medication for treating depression, anxiety, obsessive-compulsive disorder
-Escitalopram,"['depression', 'anxiety', 'panic disorder']",Medication for treating depression, anxiety, panic disorder
-Levothyroxine,"['hypothyroidism', 'fatigue', 'weight gain']",Medication for treating hypothyroidism, fatigue, weight gain
-Gabapentin,"['nerve pain', 'seizures', 'restless leg syndrome']",Medication for treating nerve pain, seizures, restless leg syndrome
-Tramadol,"['moderate to severe pain', 'chronic pain']",Medication for treating moderate to severe pain, chronic pain
-Cyclobenzaprine,"['muscle spasms', 'muscle pain', 'stiffness']",Medication for treating muscle spasms, muscle pain, stiffness
-Meloxicam,"['arthritis', 'joint pain', 'inflammation']",Medication for treating arthritis, joint pain, inflammation
-Naproxen,"['pain', 'inflammation', 'fever', 'menstrual cramps']",Medication for treating pain, inflammation, fever, menstrual cramps
-Ciprofloxacin,"['urinary tract infections', 'respiratory infections', 'skin infections']",Medication for treating urinary tract infections, respiratory infections, skin infections
-Metronidazole,"['bacterial infections', 'parasitic infections', 'rosacea']",Medication for treating bacterial infections, parasitic infections, rosacea
-Fluconazole,"['fungal infections', 'yeast infections', 'thrush']",Medication for treating fungal infections, yeast infections, thrush
-Amoxicillin-Clavulanate,"['bacterial infections', 'sinus infections', 'ear infections', 'pneumonia']",Medication for treating bacterial infections, sinus infections, ear infections, pneumonia
+Acetaminophen,"['weight loss', 'rash', 'low blood sugar']","Medication for treating weight loss, rash, low blood sugar"
+Ibuprofen,"['constipation', 'nausea']","Medication for treating constipation, nausea"
+Aspirin,"['weight gain', 'fever', 'low blood pressure']","Medication for treating weight gain, fever, low blood pressure"
+Amoxicillin,"['depression', 'swelling', 'fatigue', 'headache']","Medication for treating depression, swelling, fatigue, headache"
+Azithromycin,"['back pain', 'ear pain', 'headache']","Medication for treating back pain, ear pain, headache"
+Loratadine,"['rash', 'sore throat', 'low blood pressure']","Medication for treating rash, sore throat, low blood pressure"
+Cetirizine,"['weight gain', 'rash', 'constipation', 'back pain']","Medication for treating weight gain, rash, constipation, back pain"
+Diphenhydramine,"['diarrhea', 'chest pain']","Medication for treating diarrhea, chest pain"
+Pseudoephedrine,"['shortness of breath', 'abdominal pain', 'rash']","Medication for treating shortness of breath, abdominal pain, rash"
+Guaifenesin,['low blood pressure'],Medication for treating low blood pressure
+Dextromethorphan,['insomnia'],Medication for treating insomnia
+Phenylephrine,"['headache', 'loss of appetite']","Medication for treating headache, loss of appetite"
+Omeprazole,"['low blood pressure', 'dizziness', 'sore throat', 'runny nose']","Medication for treating low blood pressure, dizziness, sore throat, runny nose"
+Ranitidine,"['swelling', 'sore throat']","Medication for treating swelling, sore throat"
+Famotidine,"['low blood sugar', 'weight gain', 'shortness of breath', 'high blood sugar']","Medication for treating low blood sugar, weight gain, shortness of breath, high blood sugar"
+Simvastatin,['runny nose'],Medication for treating runny nose
+Atorvastatin,['fatigue'],Medication for treating fatigue
+Lisinopril,"['weight loss', 'low blood pressure', 'fatigue', 'runny nose']","Medication for treating weight loss, low blood pressure, fatigue, runny nose"
+Amlodipine,"['low blood pressure', 'dizziness']","Medication for treating low blood pressure, dizziness"
+Metformin,['headache'],Medication for treating headache
+Albuterol,"['joint pain', 'runny nose', 'eye irritation', 'nausea']","Medication for treating joint pain, runny nose, eye irritation, nausea"
+Fluticasone,"['low blood sugar', 'anxiety']","Medication for treating low blood sugar, anxiety"
+Montelukast,"['back pain', 'diarrhea']","Medication for treating back pain, diarrhea"
+Prednisone,['joint pain'],Medication for treating joint pain
+Metoprolol,"['runny nose', 'weight loss', 'low blood sugar', 'constipation']","Medication for treating runny nose, weight loss, low blood sugar, constipation"
+Losartan,"['diarrhea', 'runny nose', 'eye irritation']","Medication for treating diarrhea, runny nose, eye irritation"
+Hydrochlorothiazide,"['low blood pressure', 'diarrhea']","Medication for treating low blood pressure, diarrhea"
+Sertraline,"['rash', 'high blood pressure', 'chest pain']","Medication for treating rash, high blood pressure, chest pain"
+Fluoxetine,"['low blood pressure', 'fever']","Medication for treating low blood pressure, fever"
+Escitalopram,"['eye irritation', 'body ache']","Medication for treating eye irritation, body ache"
+Levothyroxine,"['runny nose', 'low blood sugar', 'nausea', 'dizziness']","Medication for treating runny nose, low blood sugar, nausea, dizziness"
+Gabapentin,['constipation'],Medication for treating constipation
+Tramadol,['joint pain'],Medication for treating joint pain
+Cyclobenzaprine,"['shortness of breath', 'back pain', 'vomiting']","Medication for treating shortness of breath, back pain, vomiting"
+Meloxicam,"['body ache', 'swelling', 'diarrhea', 'anxiety']","Medication for treating body ache, swelling, diarrhea, anxiety"
+Naproxen,"['abdominal pain', 'joint pain', 'high blood sugar', 'high blood pressure']","Medication for treating abdominal pain, joint pain, high blood sugar, high blood pressure"
+Ciprofloxacin,"['weight gain', 'constipation', 'joint pain']","Medication for treating weight gain, constipation, joint pain"
+Metronidazole,"['body ache', 'low blood pressure']","Medication for treating body ache, low blood pressure"
+Fluconazole,"['body ache', 'depression', 'cough']","Medication for treating body ache, depression, cough"
+Amoxicillin-Clavulanate,['chest pain'],Medication for treating chest pain

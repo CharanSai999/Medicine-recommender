@@ -13,17 +13,15 @@ def get_connection():
     # Create and return the SQLAlchemy engine
     return create_engine(db_url)
 
+
 # Create a table for user authentication
 def create_user_table():
     engine = get_connection()
     with engine.connect() as conn:
         # Check if the table exists
         result = conn.execute(text("""
-            SELECT EXISTS (
-                SELECT FROM information_schema.tables 
-                WHERE table_schema = 'public' 
-                AND table_name = 'users'
-            );
+            SELECT name FROM sqlite_master 
+            WHERE type='table' AND name='users';
         """))
         table_exists = result.scalar()
         

@@ -17,12 +17,9 @@ def create_history_table():
     with engine.connect() as conn:
         # Check if the table exists
         result = conn.execute(text("""
-            SELECT EXISTS (
-                SELECT FROM information_schema.tables 
-                WHERE table_schema = 'public' 
-                AND table_name = 'recommendation_history'
-            );
+            SELECT name FROM sqlite_master WHERE type='table' AND name='recommendation_history';
         """))
+
         table_exists = result.scalar()
         
         if not table_exists:

@@ -142,7 +142,7 @@ def recommendation_section():
                         with col2:
                             st.markdown(f"### {drug}")
                     
-                    st.info("Please consult with a healthcare professional before taking any medication.")
+                   # st.info("Please consult with a healthcare professional before taking any medication.")
             else:
                 st.warning("Please select at least one symptom.")
     

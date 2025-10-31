@@ -6,7 +6,7 @@
 
 
 
-The Drug Recommendation System is an intelligent web-based application that suggests suitable drugs for patients based on symptoms, medical history, and disease data.
+The Drug Recommendation System is an intelligent web-based application that suggests suitable drugs for patients based on symptoms,  and disease data.
 
 It uses Machine Learning algorithms to analyze input and recommend the most relevant medicines with accuracy and personalization.
 
